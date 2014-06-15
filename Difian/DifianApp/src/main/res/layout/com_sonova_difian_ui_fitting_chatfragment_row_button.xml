@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--suppress AndroidLintHardcodedText -->
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SecondaryButtonAppTheme"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Button Text"
+    android:paddingTop="4dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="4dp" />

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingRight="72dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/chat_bubble_audiologist">
+
+            <!--suppress AndroidLintHardcodedText -->
+            <TextView
+                android:id="@+id/com_sonova_difian_ui_fitting_chatfragment_row_messagetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus."
+                android:autoLink="all" />
+
+            <!--suppress AndroidLintContentDescription -->
+            <ImageView
+                android:id="@+id/com_sonova_difian_ui_fitting_chatfragment_row_messageimage"
+                android:contentDescription="@string/chat_message_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/fragmentbackground"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+            <com.sonova.difian.ui.RowLayout
+                android:id="@+id/com_sonova_difian_ui_fitting_chatfragment_row_messagebuttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:horizontalSpacing="4dp"
+                android:verticalSpacing="4dp">
+
+
+                <!--suppress AndroidLintHardcodedText -->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1" />
+
+                <!--suppress AndroidLintHardcodedText -->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2" />
+
+                <!--suppress AndroidLintHardcodedText -->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 3" />
+
+                <!--suppress AndroidLintHardcodedText -->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 4" />
+
+                <!--suppress AndroidLintHardcodedText -->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 5" />
+            </com.sonova.difian.ui.RowLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

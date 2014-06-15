@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: add valid relay regions -->
+    <string-array name="pref_relay_region_entries">
+        <item>INVALID REGION</item>
+    </string-array>
+    <string-array name="pref_relay_region_values">
+        <item>try.yaler.net:443</item>
+    </string-array>
+</resources>

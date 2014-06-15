@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="pref_relay_region"
+        android:title="@string/pref_relay_region"
+        android:dialogTitle="@string/pref_relay_region_title"
+        android:entries="@array/pref_relay_region_entries"
+        android:entryValues="@array/pref_relay_region_values"
+        android:defaultValue="@string/pref_relay_region_default" />
+</PreferenceScreen>

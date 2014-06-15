@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Difian.iml" filepath="$PROJECT_DIR$/Difian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DifianApp/DifianApp.iml" filepath="$PROJECT_DIR$/DifianApp/DifianApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YalerAndroidLibrary/YalerAndroidLibrary.iml" filepath="$PROJECT_DIR$/YalerAndroidLibrary/YalerAndroidLibrary.iml" />
+    </modules>
+  </component>
+</project>
+

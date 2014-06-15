@@ -1,0 +1,6 @@
+echo "ID = "
+read id
+echo "try"
+curl -L PUT https://try.yaler.net/$id\_1 -d "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?><message v=\"3\" guid=\"00000000-0000-0000-0000-000000000000\" date=\"1970-01-01T00:00:00.000\" type=\"user_info\"><user_name>Very Long Test Name</user_name><user_lang/><user_text/><image_base64/></message>"
+curl -L PUT https://try.yaler.net/$id\_1 -d "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?><message v=\"3\" guid=\"00000000-0000-0000-0000-000000000000\" date=\"1970-01-01T00:00:00.000\" type=\"smart\"><text>Test-Message</text><image_base64/><options type=\"text\"/></message>"
+curl -L PUT https://try.yaler.net/$id\_1 -d "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?><message v=\"3\" guid=\"00000000-0000-0000-0000-000000000000\" date=\"1970-01-01T00:00:00.000\" type=\"smart\"><text>Link-Test: https://yaler.net / Email-Test: foo@bar.com / Phone-Test: +41 79 555 55 55</text><image_base64/><options type=\"text\"/></message>"

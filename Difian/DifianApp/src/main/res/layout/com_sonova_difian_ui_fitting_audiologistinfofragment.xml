@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragmentbackground"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_audiologistinfo_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--suppress AndroidLintHardcodedText -->
+        <TextView
+            android:id="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_audiologistname_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audiologist Name"
+            android:layout_marginTop="2dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textIsSelectable="false"
+            android:textStyle="bold"
+            android:singleLine="true" />
+
+        <!--suppress AndroidLintHardcodedText -->
+        <TextView
+            android:id="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_timer_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="00:00"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/secondary_text_light"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_audiologistpicture_imageview"
+        android:contentDescription="@string/fitter_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/com_sonova_difian_ui_fitting_fittingmainactivity_audiologistinfo_linearlayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/com_sonova_difian_ui_fitting_fittingmainactivity_audiologistinfo_linearlayout"
+        android:background="@drawable/imageborder"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anonymous"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

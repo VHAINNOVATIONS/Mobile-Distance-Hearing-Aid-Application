@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_root">
+
+    <FrameLayout
+        android:id="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_audiologistinfo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_chateditor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:background="@drawable/fragmentbackground"
+        android:gravity="bottom">
+
+        <Button
+            style="@style/SecondaryButtonAppTheme"
+            android:id="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_chateditor_send"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:layout_alignBottom="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_chateditor_message"
+            android:layout_marginLeft="8dp"
+            android:text="@string/com_sonova_difian_ui_fitting_fittingmainactivity_send" />
+
+        <!-- http://www.helloandroid.com/tutorials/remove-autofocus-edittext-android -->
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0px"
+            android:layout_height="0px">
+
+            <requestFocus />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_chateditor_message"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="@string/com_sonova_difian_ui_fitting_fittingmainactivity_chateditor_message_hint"
+            android:background="@drawable/chat_bubble_typing"
+            android:padding="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_chateditor_send"
+            android:maxLines="4" />
+
+    </RelativeLayout>
+
+    <fragment
+        class="com.sonova.difian.ui.fitting.ChatFragment"
+        android:id="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_chat_fragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_audiologistinfo_layout"
+        android:layout_above="@+id/com_sonova_difian_ui_fitting_fittingmainactivity_chateditor_layout"
+        tools:layout="@android:layout/list_content" />
+
+</RelativeLayout>

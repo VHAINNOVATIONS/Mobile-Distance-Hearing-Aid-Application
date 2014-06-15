@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/com_sonova_difian_ui_setup_mainactivity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:layout_weight="1"
+        android:text="@string/com_sonova_difian_ui_setup_mainactivity_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <Button
+            style="@style/SecondaryButtonAppTheme"
+            android:id="@+id/com_sonova_difian_ui_setup_mainactivity_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="testConnection"
+            android:text="@string/test_connection"/>
+        <Button
+            style="@style/ButtonAppTheme"
+            android:id="@+id/com_sonova_difian_ui_setup_mainactivity_button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:onClick="setupFittingDevice"
+            android:text="@string/setup_fitting_device"/>
+    </LinearLayout>
+
+</LinearLayout>

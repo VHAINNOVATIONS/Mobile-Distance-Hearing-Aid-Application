@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/main_intro_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/com_sonova_difian_ui_main_mainactivity_image"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin"
+        android:layout_weight="1"
+        android:contentDescription="@string/com_sonova_difian_ui_main_mainactivity_image_contentdescription"
+        android:src="@drawable/hi_wearing"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <Button
+            style="@style/ButtonAppTheme"
+            android:id="@+id/com_sonova_difian_ui_main_mainactivity_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:onClick="startSession"
+            android:text="@string/start_fitting_session"/>
+    </LinearLayout>
+</LinearLayout>
